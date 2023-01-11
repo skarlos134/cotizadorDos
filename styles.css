@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;500;600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  height: 350px;
+  width: 350px;
+  background-color: azure;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.input-div {
+  margin-bottom: 10px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.input-div select,
+input {
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  width: 150px;
+  padding-left: 10px;
+  color: rgb(30, 30, 30);
+}
+
+::placeholder {
+  color: rgb(196, 196, 196);
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+.button {
+  height: 35px;
+  width: 100%;
+  background: rgb(0, 186, 0);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  letter-spacing: 2px;
+}
+.button:hover {
+  transition: ease-in-out 0.1s;
+  background: rgb(2, 126, 2);
+}
+.button:active {
+  background: rgb(213, 115, 255);
+}
+.titulos {
+  color: rgb(163, 163, 163);
+}

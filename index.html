@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-div">
+        <label for="edad">Edad</label>
+        <input type="number" id="edad" placeholder="escriba la edad" />
+      </div>
+
+      <div class="input-div">
+        <label for="genero">Genero</label>
+        <select name="genero" id="genero">
+          <option value="hombre">Hombre</option>
+          <option value="mujer">Mujer</option>
+        </select>
+      </div>
+
+      <div class="input-div">
+        <label for="categoria">Categoria</label>
+        <select name="categoria" id="categoria">
+          <option value="aDos">A2</option>
+          <option value="bUno">B1</option>
+          <option value="cUno">C1</option>
+          <option value="comboBuno">Combo A2+B1</option>
+          <option value="comboCuno">Combo A2+C1</option>
+          <option value="rCat">Recategorizar</option>
+        </select>
+      </div>
+
+      <button class="button" id="cotizar" value="cotizar" onclick="cotizar()">
+        COTIZAR
+      </button>
+
+      <div class="resultado">
+        <p class="titulos">Vr Curso</p>
+        <p id="vCurso"></p>
+        <p class="titulos">Vr Examen</p>
+        <p id="vExamen"></p>
+        <p class="titulos">Vr Total</p>
+        <p id="vTotal"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
