@@ -38,7 +38,7 @@ function genero() {
       return 7400;
     } else if (edad >= 66 && edad <= 80) {
       return 7200;
-    } else if (edad > 81) {
+    } else if (edad >= 81) {
       return 7100;
     } else {
       return "edad no valida";
@@ -263,9 +263,14 @@ function examenes() {
 }
 
 function cotizar() {
-  vCurso.innerText = genero() + categorias() + recaudo + sicov;
-  vExamen.innerText = examenes();
+  vCurso.innerText =
+    "$" + (genero() + categorias() + recaudo + sicov).toLocaleString("en-US");
+  vExamen.innerText = "$" + examenes().toLocaleString("en-US");
   vTotal.innerText =
-    examenes() + (genero() + categorias() + derTransito() + recaudo + sicov);
-  derTransitoA.innerText = derTransito();
+    "$" +
+    (
+      examenes() +
+      (genero() + categorias() + derTransito() + recaudo + sicov)
+    ).toLocaleString("en-US");
+  derTransitoA.innerText = "$" + derTransito().toLocaleString("en-US");
 }

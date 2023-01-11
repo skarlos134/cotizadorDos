@@ -13,9 +13,9 @@ body {
 }
 
 .container {
-  height: 450px;
+  height: auto;
   width: 350px;
-  background-color: azure;
+  background-color: rgb(242, 242, 242);
   padding: 20px;
   border-radius: 10px;
 }
@@ -45,7 +45,7 @@ input {
 .button {
   height: 35px;
   width: 100%;
-  background: rgb(0, 186, 0);
+  background: rgb(158, 2, 215);
   color: white;
   border-radius: 5px;
   border: none;
@@ -53,11 +53,38 @@ input {
 }
 .button:hover {
   transition: ease-in-out 0.1s;
-  background: rgb(2, 126, 2);
+  background: rgb(159, 21, 154);
 }
 .button:active {
   background: rgb(213, 115, 255);
 }
 .titulos {
   color: rgb(163, 163, 163);
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+.image img {
+  height: 100px;
+}
+
+.resultado {
+  margin-top: 10px;
+}
+
+.footer {
+  margin-top: 10px;
+  font-size: 10px;
+  font-weight: 100;
+  text-align: center;
+}
+
+.footer span {
+  font-size: 13px;
 }
