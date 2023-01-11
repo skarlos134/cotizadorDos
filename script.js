@@ -3,6 +3,26 @@ const sicov = 99936;
 let vCurso = document.getElementById("vCurso");
 let vExamen = document.getElementById("vExamen");
 let vTotal = document.getElementById("vTotal");
+let derTransitoA = document.getElementById("derTransito");
+
+function derTransito() {
+  let derTransito = document.getElementById("sede").value;
+  let categoria = document.getElementById("categoria").value;
+
+  if (derTransito === "funza") {
+    if (categoria === "comboBuno" || categoria === "comboCuno") {
+      return 265400;
+    } else {
+      return 132700;
+    }
+  } else if (derTransito === "madrid") {
+    if (categoria === "comboBuno" || categoria === "comboCuno") {
+      return 270000;
+    } else {
+      return 135000;
+    }
+  }
+}
 
 function genero() {
   let genero = document.getElementById("genero").value;
@@ -245,5 +265,7 @@ function examenes() {
 function cotizar() {
   vCurso.innerText = genero() + categorias() + recaudo + sicov;
   vExamen.innerText = examenes();
-  vTotal.innerText = examenes() + (genero() + categorias() + recaudo + sicov);
+  vTotal.innerText =
+    examenes() + (genero() + categorias() + derTransito() + recaudo + sicov);
+  derTransitoA.innerText = derTransito();
 }
